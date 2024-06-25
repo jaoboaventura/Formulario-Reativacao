@@ -28,7 +28,8 @@
 }
 
 .btn-minha-konnet,
-.btn-site {
+.btn-site,
+.btn-suporte {
     font-weight: 700;
     color: var(--cinza-mais-escuro);
 }
@@ -51,6 +52,7 @@ form {
 
 .btn-minha-konnet,
 .btn-site,
+.btn-suporte,
 .reactivate-button button {
     text-decoration: none;
     transition: 0.4s ease-in-out;
@@ -64,6 +66,7 @@ form {
 
 .btn-minha-konnet,
 .btn-site,
+.btn-suporte,
 .input-box input,
 .reactivate-button button {
     transition: 0.4s ease-in-out;
@@ -126,7 +129,8 @@ form {
     font-size: var(--observacao);
 }
 
-.btn-site:hover {
+.btn-site:hover,
+.btn-suporte:hover {
     color: var(--azul-konnet);
 }
 

@@ -1,45 +1,10 @@
-.btn-minha-konnet,
-.btn-site {
-    font-weight: 700;
-    color: var(--cinza-mais-escuro);
-}
-.container,
-.form,
-.form-header,
-.form-image,
-.input-box,
-.site-button,
-body,
-form {
-    display: flex;
-}
-body,
-form {
-    width: 100%;
-}
-.btn-minha-konnet,
-.btn-site,
-.reactivate-button button {
-    text-decoration: none;
-    transition: 0.4s ease-in-out;
-}
-.form-text h1,
-.form-text p,
-.site-button {
-    text-transform: uppercase;
-}
-.btn-minha-konnet,
-.btn-site,
-.input-box input,
-.reactivate-button button {
-    transition: 0.4s ease-in-out;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
 }
+
 :root {
     --azul-konnet: #1c208c;
     --azul-escuro: #08005e;
@@ -61,6 +26,49 @@ form {
     --paragrafo: 1em;
     --observacao: 0.8em;
 }
+
+.btn-minha-konnet,
+.btn-site {
+    font-weight: 700;
+    color: var(--cinza-mais-escuro);
+}
+
+.container,
+.form,
+.form-header,
+.form-image,
+.input-box,
+.site-button,
+body,
+form {
+    display: flex;
+}
+
+body,
+form {
+    width: 100%;
+}
+
+.btn-minha-konnet,
+.btn-site,
+.reactivate-button button {
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.form-text h1,
+.form-text p,
+.site-button {
+    text-transform: uppercase;
+}
+
+.btn-minha-konnet,
+.btn-site,
+.input-box input,
+.reactivate-button button {
+    transition: 0.4s ease-in-out;
+}
+
 body {
     height: 100vh;
     justify-content: center;
@@ -70,28 +78,34 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .container {
     width: 80%;
     height: 70vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
     border-radius: 25px;
 }
+
 .form-image,
 .form-image img {
     border-radius: 25px 0 0 25px;
 }
+
 form {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .form-image {
     width: 40%;
     justify-content: center;
     align-items: center;
 }
+
 .form-image img {
     height: 100%;
 }
+
 .form {
     width: 60%;
     flex-direction: column;
@@ -101,44 +115,54 @@ form {
     padding: 2em 7em;
     border-radius: 0 25px 25px 0;
 }
+
 .form-header {
     justify-content: space-between;
 }
+
 .site-button {
     align-items: center;
     gap: 1rem;
     font-size: var(--observacao);
 }
+
 .btn-site:hover {
     color: var(--azul-konnet);
 }
+
 .btn-minha-konnet {
     padding: 0.8em;
     border: 1px solid var(--cinza-mais-escuro);
     border-radius: 0.8em;
 }
+
 .btn-minha-konnet:hover {
     background-color: var(--azul-konnet);
     border: 1px solid var(--azul-konnet);
     color: var(--branco);
 }
+
 .form-text {
     margin: 3em 0;
 }
+
 .form-text h1 {
     font-size: var(--subtitulo);
     font-weight: 400;
     color: var(--preto-konnet);
 }
+
 .form-text p {
     font-size: var(--titulo);
     font-weight: 800;
     color: var(--azul-escuro);
 }
+
 .input-box {
     flex-direction: column;
     margin-bottom: 1.1rem;
 }
+
 .input-box input {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
@@ -147,26 +171,32 @@ form {
     box-shadow: 1px 1px 6px #0000001c;
     font-size: var(--paragrafo);
 }
+
 .input-box input:hover {
     background-color: var(--cinza-mais-claro);
 }
+
 .input-box input:focus-visible {
     outline: 1px solid var(--azul-konnet);
 }
+
 .input-box label {
     font-size: var(--paragrafo);
     font-weight: 500;
     color: var(--preto-konnet);
 }
+
 .input-box input::placeholder {
     color: var(--cinza-mais-escuro);
     font-size: var(--observacao);
 }
+
 .input-box span {
     font-size: var(--observacao);
     font-weight: 400;
     color: var(--cinza-mais-escuro);
 }
+
 .reactivate-button button {
     width: 100%;
     margin-top: 2.5em;
@@ -180,44 +210,54 @@ form {
     font-weight: 700;
     color: var(--branco);
 }
+
 .reactivate-button button:hover {
     background-color: var(--azul-escuro);
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 @media screen and (max-width: 1330px) {
     .form-image {
         display: none;
     }
+
     .container {
         width: 50%;
     }
+
     .form {
         width: 100%;
         border-radius: 25px;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .container {
         width: 90%;
         height: auto;
     }
 }
+
 @media screen and (max-width: 800px) {
     .form {
         padding: 3em;
     }
 }
+
 @media screen and (max-width: 450px) {
     .form {
         padding: 1.5em;
     }
+
     .form-text h1 {
         font-size: var(--paragrafo);
     }
+
     .form-text p {
         font-size: var(--subtitulo);
         font-weight: 800;
